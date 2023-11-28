@@ -14,6 +14,33 @@ body{
     margin: auto;
     background: url(star.png) black;
     z-index: -1;
+    overflow: hidden;
+}
+
+.star_wars{
+    perspective: 400px;
+
+}
+
+.crawl{
+    position: relative;
+    transform-origin: 50% 100%;
+    transform: translateY(100%) rotateX(0deg);
+    animation: crawl 60s linear forwards;
+    animation-duration: 70s;
+}
+
+@keyframes crawl{
+    0%{
+        transform : translateY(100%) rotateX(20deg);
+    }
+    50%{
+        transform: translateY(-500%) rotateX(20deg);
+    }
+    100%
+    {
+        transform: translateY(-1000%) rotateX(20deg);
+    }
 }
 
 p{
@@ -21,4 +48,5 @@ p{
     text-align: justify;
     word-spacing: 10px;
     line-height: 30px;
+    animation: move 3s infinite;
 }
