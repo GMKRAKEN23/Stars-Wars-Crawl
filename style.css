@@ -17,8 +17,15 @@ body{
     overflow: hidden;
 }
 
+.logo{
+    position: fixed;
+    position: absolute;
+    top: 0;
+    left: 20%;
+}
+
 .star_wars{
-    perspective: 400px;
+    perspective: 1200px;
 
 }
 
